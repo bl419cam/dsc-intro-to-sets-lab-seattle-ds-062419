@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Probability theory is all around. A common example is in the game of poker or related card games, where players try to calculate the probability of winning a round given the cards they have in their hands. Also in the business context probabilities play an important role. Operating in an volatile economy, companies need to take uncertainty into account and this is exactly where probability theory plays a role.
+Probability theory is all around. A common example is in the game of poker or related card games, where players try to calculate the probability of winning a round given the cards they have in their hands. Also, in a business context, probabilities play an important role. Operating in a volatile economy, companies need to take uncertainty into account and this is exactly where probability theory plays a role.
 
 As mentioned in the lesson before, a good understanding of probability starts with understanding of sets and set operations. That's exactly what you'll learn in this lab!
 
@@ -11,9 +11,8 @@ As mentioned in the lesson before, a good understanding of probability starts wi
 
 You will be able to:
 
-- Have a better sense of what sets, universal sets, and subsets are
-- Know how to perform common set operations in Python 
-- Learn how to use Venn Diagrams to understand about the relationships between sets
+* Use Python to perform set operations
+* Use Python to demonstrate the inclusion/exclusion principle
 
 
 ## Exploring Set Operations Using a Venn Diagram
@@ -28,7 +27,8 @@ Let's start with a pretty conceptual example. Let's consider the following sets:
 
 #### a. Illustrate all the sets in a Venn Diagram like the one below. The rectangular shape represents the universal set.
 
-<img src="./images/new_venn_diagr.png" width="400">
+<img src="./images/venn_diagr.png" width="600">
+
 
 #### b. Using your Venn Diagram, list the elements in each of the following sets:
 
@@ -41,6 +41,9 @@ Let's start with a pretty conceptual example. Let's consider the following sets:
 - $A\backslash B$
 - $C \backslash (B \backslash A)$ 
 - $(C \cap A) \cup (C \backslash B)$
+
+
+        
         
 #### c. For the remainder of this exercise, let's  create sets A, B and C and universal set U in Python and test out the results you came up with. Sets are easy to create in Python. For a guide to the syntax, follow some of the documentation [here](https://www.w3schools.com/python/python_sets.asp)
 
@@ -152,11 +155,11 @@ C_inters_A_union_C_min_B # {2, 6, 8, 9}
 Use A, B and C from exercise one to verify the inclusion exclusion principle in Python. 
 You can use the sets A, B and C as used in the previous exercise. 
 
-Recall from the previous lessen that:
+Recall from the previous lesson that:
 
 $$\mid A \cup B\cup C\mid = \mid A \mid + \mid B \mid + \mid C \mid - \mid A \cap B \mid  -\mid A \cap C \mid - \mid B \cap C \mid  + \mid A \cap B \cap C \mid $$
 
-combining these main commands:
+Combining these main commands:
 
 | Method        |	Equivalent |	Result |
 | ------                    | ------       | ------    |
@@ -218,7 +221,7 @@ None
 Eve # should be {'Rabbit', 'Goldfish'}
 ```
 
-This time around, Nina promised to take care of Mary's pets while she's awat. but also wants to make sure her pets are well taken care of. As Nina is already spending a considerable amount of time taking care of her own pets, adding a few more won't make that much of a difference. Nina does want to update her list while Marie is away. 
+This time around, Nina promised to take care of Mary's pets while she's away. But she also wants to make sure her pets are well taken care of. As Nina is already spending a considerable amount of time taking care of her own pets, adding a few more won't make that much of a difference. Nina does want to update her list while Marie is away. 
 
 
 ```python
@@ -242,7 +245,7 @@ None
 n_species_Nina # 9
 ```
 
-Taking care of this many pets is weighing heavy on Nina. She remembered Eve had a smaller collection of pets lately, and that's why she asks Eve to take care of the common species. This way, the extra pets are not a huge effort on Eve's behalf. Let's update Nina's pet collection.
+Taking care of this many pets is weighing heavily on Nina. She remembered Eve had a smaller collection of pets lately, and that's why she asks Eve to take care of the common species. This way, the extra pets are not a huge effort on Eve's behalf. Let's update Nina's pet collection.
 
 
 ```python
@@ -250,12 +253,12 @@ None
 Nina # 7
 ```
 
-Taking care of 7 species seems doable for Nina!
+Taking care of 7 species is something Nina feels comfortable doing!
 
 ## Writing Down the Elements in a Set
 
 
-Mary dropped off her Pet's at Nina's house, and finally made her way to the highway. Awesome, her vacation has begun!
+Mary dropped off her Pet's at Nina's house and finally made her way to the highway. Awesome, her vacation has begun!
 She's approaching an exit. At the end of this particular highway exit, cars can either turn left (L), go straight (S) or turn right (R). It's pretty busy and there are two cars driving close to her. What you'll do now is create several sets. You won't be using Python here, it's sufficient to write the sets down on paper. A good notion of sets and subsets will help you calculate probabilities in the next lab!
 
 Note: each set of action is what _all three cars_ are doing at any given time
